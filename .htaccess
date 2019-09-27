@@ -1,0 +1,22 @@
+RewriteEngine on
+
+# www rewrite
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+
+RewriteRule ^index\.html$ https://pizzamia.ua/ [R=301,L]
+
+# prevent directory listings
+Options -Indexes
+IndexIgnore */*
+
+RewriteCond %{HTTPS} off 
+RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# follow symbolic links
+Options FollowSymlinks
+RewriteRule ^admin(/.+)?$ backend/web/$1 [L,PT]
+RewriteRule ^admin/(.+)?$ backend/web/$1 [L,PT]
+RewriteRule ^(.+)?$ frontend/web/$1

@@ -1,0 +1,368 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201908 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.pizzamia.com.ua.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1995                
+POS_TIME 2667                
+POS_VISITOR 6858                
+POS_DAY 8040                
+POS_DOMAIN 3394                
+POS_LOGIN 3627                
+POS_ROBOT 3782                
+POS_WORMS 4020                
+POS_EMAILSENDER 4151                
+POS_EMAILRECEIVER 4294                
+POS_SESSION 8438                
+POS_SIDER 8645                
+POS_FILETYPES 4429                
+POS_DOWNLOADS 4677                
+POS_OS 4745                
+POS_BROWSER 4855                
+POS_SCREENSIZE 5218                
+POS_UNKNOWNREFERER 5292                
+POS_UNKNOWNREFERERBROWSER 5379                
+POS_ORIGIN 5461                
+POS_SEREFERRALS 5602                
+POS_PAGEREFS 5759                
+POS_SEARCHWORDS 6040                
+POS_KEYWORDS 6192                
+POS_MISC 2331                
+POS_ERRORS 6251                
+POS_CLUSTER 3483                
+POS_SIDER_404 6391                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20190901132557 1 0 13708819978581
+FirstTime 20190801090211
+LastTime 20190831132347
+LastUpdate 20190902045527 1 0 0 0 0
+TotalVisits 48                  
+TotalUnique 26                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 26                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 1 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 22 125 12539211 9 21 14205
+2 0 0 0 1 1 390
+3 0 0 0 1 1 390
+4 0 0 0 0 0 0
+5 0 0 0 3 3 1167
+6 0 0 0 0 0 0
+7 2 40 5979659 0 1 0
+8 1 1 5184 2 2 784
+9 3 23 5717203 0 2 306
+10 96 337 52066665 11 69 149439
+11 46 115 15325218 14 24 18494
+12 113 480 94583884 14 104 79919
+13 41 119 25463064 5 39 27245
+14 18 101 22707604 5 10 79621
+15 45 227 27659268 6 16 38602
+16 40 227 35246731 11 30 21258
+17 10 41 13875829 0 2 0
+18 0 0 0 1 1 166
+19 203 718 80353664 62 108 201665
+20 97 406 55380305 12 69 61388
+21 60 265 37652434 24 87 164163
+22 75 205 18276441 31 42 149537
+23 45 148 20062149 7 38 36745
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 917 3578 522894513
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 3
+unknown 1 306 20190801090210 1
+yandex 1 306 20190809200407 1
+bot[\s_+:,\.\;\/\\-] 1 5146 20190802200341 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 9
+css 267 20814036 0 0
+png 1165 129224762 0 0
+woff2 101 4079377 0 0
+woff 4 229648 0 0
+map 22 1529048 0 0
+php 87 539400 0 0
+html 703 2437359 0 0
+jpg 764 324217619 0 0
+js 465 39823264 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/robots.txt 2 0 612
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 6
+macosx 482
+linuxandroid 475
+winnt 211
+winvista 106
+linux 1783
+win7 521
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 16
+chrome76.0.3809.132 552
+chrome76.0.3809.100 296
+safari9.1.2 54
+safari12.1 94
+iphone 39
+chrome75.0.3770.143 245
+chrome76.0.3809.87 670
+netscape5.0 2
+safari12.1.1 264
+firefox59.0 1
+chrome74.0.3729.169 51
+chrome71.0.3578.141 88
+chrome76.0.3809.89 146
+chrome75.0.3770.142 711
+safari11.1.2 30
+chrome75.0.3770.100 335
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 134 138
+From1 5 5
+From2 11 11
+From3 5 5
+From4 762 3419
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 11 11
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 3
+https://web.skype.com 2 2
+https://www.facebook.com/v4.0/dialog/oauth/read/ 2 2
+https://m.facebook.com/v4.0/dialog/oauth/confirm/ 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+403 36 13354
+302 91 61933
+500 412 951531
+301 11 5151
+404 12 4895
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 4
+/index.php 1 -
+/wp-login.php 4 -
+/init.php 1 -
+/frontend/frontend/web/images/page/5d2c876cc1659.jpg 6 https://pizzamia.com.ua/frontend/web/page/delivery.html
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 26
+92.244.122.131 255 857 97407019 20190807110008
+31.128.72.110 248 1095 202906069 20190830141725
+109.108.65.7 165 323 23295602 20190802225500
+93.72.60.25 63 211 27357058 20190806233733
+193.106.57.195 51 208 36831532 20190831132347
+195.238.178.209 21 82 15754907 20190804123210
+88.99.206.95 19 106 12569778 20190803112655
+37.73.80.199 15 34 2063942 20190802205607
+46.211.68.37 15 67 15343942 20190806211741
+185.175.94.154 12 50 6630047 20190803103311
+46.211.49.103 4 43 5698148 20190802200043
+128.124.92.130 2 39 5594742 20190802195905
+46.98.17.254 10 66 8883627 20190802212158
+52.114.77.26 1 1 30134 20190827171259
+46.211.98.126 1 1 5184 20190805082112
+193.106.59.95 9 88 11387520 20190802215318
+46.211.99.79 5 42 6602695 20190802202057
+52.114.75.71 1 1 24196 20190802195347
+178.133.177.42 4 41 5599924 20190802233913
+46.211.207.145 3 42 10414357 20190821124007
+46.211.103.244 2 40 5979659 20190803075915
+64.246.161.190 1 1 531 20190801090211
+128.124.58.29 3 40 5599589 20190802203731
+46.200.82.196 2 39 5594743 20190802195925
+46.211.4.185 3 39 5602896 20190802195959
+130.185.237.41 2 22 5716672 20190821095745
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 13
+20190801 1 1 531 1
+20190802 338 1128 118769761 18
+20190803 37 247 33430349 5
+20190804 17 31 7504042 1
+20190805 17 93 12307278 2
+20190806 169 686 100276028 4
+20190807 52 155 12612752 2
+20190821 5 64 16131029 2
+20190827 73 297 52775183 4
+20190828 146 485 94476114 5
+20190829 46 286 56245130 2
+20190830 3 30 3365840 1
+20190831 13 75 15000476 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 4
+5mn-15mn 8
+0s-30s 14
+30s-2mn 5
+2mn-5mn 10
+15mn-30mn 1
+30mn-1h 6
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 56
+/frontend/web/cart/add.html 195 115463 0 4
+/frontend/web/ 165 898040 42 11
+/backend/web/index.php 87 539400 0 3
+/frontend/web/css/fontawesome/webfonts/fa-solid-900.woff2 70 3404655 0 5
+/frontend/web/page/menu.html 31 123717 0 1
+/frontend/web/site/auth.html 28 27126 0 0
+/frontend/web/category/handmade.html 22 107144 1 0
+/frontend/web/category/soup.html 21 94139 0 1
+/frontend/web/category/napitki.html 20 122094 0 2
+/frontend/web/category/pizza.html 20 104395 0 0
+/ 1 531 1 1
+/frontend/web/goods/picca-gavayiskaya.html 1 4899 0 0
+/frontend/web/goods/picca-kurinaya.html 5 26429 0 0
+/frontend/web/page/policy.html 6 38367 0 2
+/frontend/web/myorder/show/80.html 1 4895 0 0
+/frontend/web/user/resetpassword.html 3 14498 0 0
+/frontend/web/goods/pelmeni-kurinuie.html 2 10239 0 0
+/frontend/web/user/newpassword.html 2 9666 0 0
+/backend/web/ 11 30049 1 0
+/frontend/web/goods/espresso.html 1 5014 0 0
+/frontend/web/assets/58b5c1b5/css/bootstrap.css.map 2 198110 0 0
+/frontend/web/myorder/show/21.html 1 4834 0 0
+/frontend/web/myorder/show/29.html 1 4773 0 0
+/backend/web/css/fontawesome/webfonts/fa-regular-400.woff2 12 82788 0 1
+/frontend/web/assets/eef6633/js/bootstrap.bundle.js.map 1 92076 0 0
+/frontend/web/customer/validate.html 5 1708 0 1
+/frontend/web/myorder/show/36.html 3 15173 0 0
+/frontend/web/user/signup.html 11 56932 0 0
+/frontend/web/assets/17f45772/js/bootstrap.bundle.js.map 8 460380 0 0
+/frontend/web/category/dessert.html 18 78110 0 0
+/frontend/web/goods/picca-margarita.html 4 21290 0 0
+/frontend/web/customer.html 9 45342 1 1
+/frontend/web/goods/picca-peperoni.html 14 71084 0 1
+/frontend/web/goods/vareniki-s-pashtetom.html 6 29989 1 0
+/frontend/web/myorder.html 19 94235 0 0
+/frontend/web/goods/mohito-malina-rozmarin.html 1 5004 0 0
+/frontend/web/category/salads.html 14 60144 0 1
+/frontend/web/myorder/show/33.html 1 4912 0 0
+/frontend/web/assets/17f45772/css/bootstrap.css.map 8 495275 0 1
+/frontend/web/goods/domashniyi-limonad.html 1 4805 0 0
+/frontend/web/myorder/setratio.html 3 1062 0 1
+/frontend/web/assets/58b5c1b5/js/bootstrap.bundle.js.map 2 184152 0 0
+/frontend/web/cart/selectdelivery.html 14 8552 0 0
+/frontend/web/css/fontawesome/webfonts/fa-regular-400.woff 2 33608 0 1
+/frontend/web/goods/pizza-proshuto-koto.html 1 5068 0 0
+/frontend/web/cart/selectdiscount.html 2 1225 0 0
+/frontend/web/page/contact.html 19 91276 0 1
+/frontend/web/page/delivery.html 10 41526 1 1
+/backend/web/css/fontawesome/webfonts/fa-solid-900.woff2 7 453954 0 1
+/frontend/web/goods/pelmeni-myasnuie.html 5 23848 0 1
+/frontend/web/assets/eef6633/css/bootstrap.css.map 1 99055 0 1
+/frontend/web/css/fontawesome/webfonts/fa-solid-900.woff 2 196040 0 0
+/frontend/web/css/fontawesome/webfonts/fa-regular-400.woff2 12 137980 0 4
+/frontend/web/goods/picca-dyablo.html 2 10010 0 1
+/frontend/web/goods/picca-4-suira.html 2 9937 0 0
+/frontend/web/goods/picca-proshuto-krudo.html 2 9815 0 0
+END_SIDER

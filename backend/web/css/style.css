@@ -1,0 +1,955 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, tt, var,
+b, u, i, center, dl, dt, dd, ol, fieldset, form, label, legend, 
+caption, tbody, tfoot, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/background1.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+#wrapper {
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    box-shadow: 0px 0px 24px #000;
+    background-color: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto';
+    color: #444;
+}
+
+button, select, .alert {
+    font-family: Roboto;
+}
+
+.alert {
+    margin: 10px 0 0 0;
+}
+
+h1 {
+    letter-spacing: -1.5px;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+h2 {
+    letter-spacing: -.5px;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+h3 {
+    letter-spacing: 0;
+    font-size: 1.75em;
+    font-weight: 400;
+}
+
+h4 {
+    letter-spacing: .25px;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+h5 {
+    letter-spacing: 0;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+h6 {
+    letter-spacing: 0.15px;
+    font-size: 1.125em;
+    font-weight: 500;
+}
+
+p {
+	font-family: Roboto;
+    color: #353535;
+    line-height: 1.5em;
+}
+
+a {
+	font-family: Roboto;
+    text-decoration: none;
+    color: #2196F3;
+}
+
+span {
+    font-family: Roboto;
+}
+
+.center {
+    text-align: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/*---------------------- header -----------------------*/
+
+header {
+	width: 100%;
+	height: 70px;
+	box-shadow: 0px 0px 3px #a7a7a7;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .left-side,
+header .right-side {
+    width: 35%;
+}
+
+header .left-side {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .left-side h5 {
+    font-family: Arial;
+    margin: 0 0 0 10%;
+    letter-spacing: -1px;
+    font-size: 1.125em;
+    color: #737373;
+}
+
+header .right-side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 42px 0 0 0;
+}
+
+header .logo img {
+	max-width: 100%;
+}
+
+header .login {
+    cursor: pointer;
+    margin: 0 20px 0 0;
+    background-image: url('../images/login.png');
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+}
+
+header .logged {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 20px 0 0; 
+    cursor: pointer;
+}
+
+header .logged .show-profile {
+position: absolute;
+    background-color: rgba(0,0,0,0.06);
+    border-radius: 20px;
+    margin: 0px 0 0 -170px;
+    padding: 0 60px 0 0;
+    width: 210px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+header .logged .show-profile .logout {
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: .875em;
+    margin: 0;
+    background-color: #cc0808;
+    padding: 4px;
+    border-radius: 5px;
+    transition: .3s;
+    border: none;
+    cursor: pointer;
+}
+
+header .logged .show-profile .logout:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+header .logged .show-profile .tomain {
+    font-family: Roboto;
+    color: #2196F3;
+    font-size: .875em;
+    margin: 0 20px 0 20px;
+}
+
+/*---------------------- body -------------------------*/
+
+.wrapper {
+	width: 100%;
+	display: flex;
+	position: relative;
+	z-index: 1;
+}
+
+.sidebar {
+	width: 20%;
+    background-color: #607D8B;
+}
+
+.sidebar .work sup {
+    font-size: .575em;
+}
+
+.sidebar nav {
+	margin-top: 0;
+}
+
+.sidebar nav li {
+	list-style-type: none;
+	width: 100%;
+}
+
+.sidebar nav li a {
+    display: block;
+    width: 100%;
+    padding: 15px 5% 15px 10%;
+    border-bottom: 1px solid #ffffff4d;
+    font-family: Roboto;
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: #FFF;
+    font-size: 1.25em;
+}
+
+.sidebar nav li a:hover {
+	background-color: #dca52b;
+	transition: .5s;
+    text-decoration: none;
+}
+
+.sidebar nav li.active:after {
+    content: "➤";
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 54px;
+    margin: -54px 0 0 80%;
+}
+
+.sidebar nav li.active a {
+    background-color: rgba(0,0,0,0.6);
+}
+
+main {
+    width: 80%;
+    padding: 40px 2% 0;
+}
+
+main table {
+    margin: 10px 0 0 0;
+    font-family: Arial;
+}
+
+main .tableAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+main .right {
+    float: right;
+}
+
+main label {
+    font-family: Roboto;
+    font-size: .75em;
+}
+
+main label.control-label {
+    font-weight: 500;
+}
+
+main .help-block {
+    font-size: .75em;
+}
+
+main input,
+main textarea {
+    font-family: Roboto;
+}
+
+main .form-control-feedback-error,
+.invalid-feedback {
+    font-family: Roboto;
+    font-size: .75em;
+    color: #F44336;
+}
+
+#setEditImage {
+    text-align: center;
+}
+
+#setEditImage img {
+    border-radius: 50%;
+}
+
+main .tdBackgroundWithImage {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 50px;
+    background-size: 20px;
+}
+
+main .sub {
+    font-size: .8125em;
+    padding-left: 70px;
+    background-position: 40px center;
+}
+
+.gotImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.gotImages .image {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 10px 0;
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+
+.avatar .pageImage,
+.ingredientImage .pageImage,
+.optionImage .pageImage,
+.optionImageEdit .pageImage,
+.ingredientEditImage  .pageImage
+{
+    margin: 0 auto 15px;
+    border-radius: 50%;
+}
+
+.gotImages .image .imageRun {
+    background-color: #00000080;
+    padding: 5px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+.optionImage .image .imageRun,
+.optionImageEdit .image .imageRun {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.avatar .pageImage .pageImageRun,
+.ingredientImage .pageImage .pageImageRun,
+.ingredientEditImage  .pageImage  .pageImageRun
+{
+    background-color: transparent;
+}
+
+.gotImages .image .imageRun .imageCrop,
+.gotImages .image .imageRun .imageInsert,
+.gotImages .image .imageRun .deleteImage {
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+}
+
+main .include-ingredient {
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+main .include-ingredient div {
+    font-weight: 500;
+    width: 100px;
+    text-align: center;
+}
+
+main .include-ingredient div input[type="checkbox"] {
+    display: none;
+}
+
+main .include-ingredient div input[type="checkbox"] ~ label img {
+    border: 5px solid #d2d2d2;
+    max-width: 100%;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .6;
+}
+
+main .include-ingredient div input[type="checkbox"]:checked ~ label img {
+    border: 5px solid #4caf50;
+    opacity: 1;
+}
+
+.card {
+    margin-top: 10px;
+    display: none;
+}
+
+.card .options {
+    margin: 10 0 0 0;
+    display: flex;
+}
+
+.getOrderList,
+.editGetOrderList {
+    margin: 18px 0 10px 0;
+}
+
+.getOrderList .list,
+.editGetOrderList .editList {
+    width: 100%;
+    display: flex;
+    padding: 0px 0 5px 0;
+    margin: 0 0 5px 0;
+    border-bottom: 1px solid #e2e2e2;
+    align-items: center;
+}
+
+.getOrderList .list img,
+.editGetOrderList .editList img {
+    max-width: 100%;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.getOrderList .list a,
+.editGetOrderList .editList a {
+    font-size: .875em;
+    margin: 0 0 0 10px;
+    width: 100%;
+    display: block;
+}
+
+.getOrderList .list .amount,
+.editGetOrderList .editList .amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    margin: 0 0 0 10px;
+}    
+
+.getOrderList .list .amount .number,
+.editGetOrderList .editList .amount .editNumber {
+    font-size: .875em;
+    font-family: Roboto;
+}
+
+.getOrderList .list .amount .up, 
+.getOrderList .list .amount .down,
+.editGetOrderList .editList .amount .editUp, 
+.editGetOrderList .editList .amount .editDown {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #e21111;
+    font-size: 1em;
+    padding: 0;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.getOrderList .list .value,
+.editGetOrderList .editList .editValue {
+    margin: 0 0 0 20px;
+    font-family: Roboto;
+}
+
+.getOrderList .add_item,
+.editGetOrderList .add_item {
+    font-family: Arial;
+    font-size: .75em;
+    color: #353535;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.getOrderList .add_item:before,
+.editGetOrderList .add_item:before {
+    content: " ";
+    opacity: 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, #FFF, #353535, #FFF);
+    position: absolute;
+    margin: 15px 0 0 0;
+    transition: .5s;
+}
+
+.getOrderList .add_item:hover:before,
+.editGetOrderList .add_item:hover:before {
+    opacity: 1;
+}
+
+.getOrderList .list .link,
+.editGetOrderList .editList .link {
+    width: 45%;
+}
+
+.getOrderList .list .link p,
+.editGetOrderList .editList .link p {
+    margin: 6px 0 0 10px;
+    font-size: .75em;
+}
+
+.getOrderList p,
+.editGetOrderList p {
+    font-family: Roboto;
+    font-size: .875em;
+    margin: 20px 0 0 0;
+}
+
+.coupon label::before,
+.coupon label::after,
+.editCoupon label::before,
+.editCoupon label::after {
+    top: -1px;
+}
+
+.custom-checkbox .custom-control-label::before,
+.custom-switch .custom-control-label::before {
+    top: -1px;
+}
+
+.custom-checkbox .custom-control-label::after,
+.custom-switch .custom-control-label::after {
+    top: 1px;
+}
+
+.custom-control {
+    padding-left: 0;
+}
+
+.site-login {
+    width: 30%;
+    margin: 100px auto 0;
+    background-color: #ffffffd1;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.status-flex {
+    display: flex;
+    margin: 0 0 0 23px;
+    justify-content: space-between;
+}
+
+.status-flex .custom-control-label::before,
+.status-flex .custom-control-label::after {
+    top: -1px;
+    left: -1.2rem;
+}
+
+.orderCoupons,
+.editOrderCoupons {
+    margin: 0 0 30px 27px;
+}
+
+.order-delivery {
+    font-size: 1.5em;
+    color: #00BCD4;
+}
+
+.order-value {
+    font-size: 1.5em;
+    color: #607D8B;
+}
+
+.order-pay {
+    font-size: 1.5em;
+    color: #4CAF50;
+    font-weight: 500;
+}
+
+/*-------------------------- Footer -------------------------------------------*/
+
+footer {
+    width: 100%;
+    background-color: #131313;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+footer section {
+    width: 22%;
+    padding: 10px 1%;
+    border-right: 1px dashed #505050;
+}
+
+footer section:last-child {
+    border: none;
+}
+
+footer section .social {
+    display: flex;
+    margin: 10px 0 0 0;
+    justify-content: center;
+}
+
+footer section .social a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+
+footer section .social a img {
+    max-width: 100%;
+}
+
+footer section h6 {
+    position: relative;
+    display: inline-block;
+}
+
+footer section h6::before {
+    content: " ";
+    width: 50%;
+    height: 1px;
+    background-color: #cc0808;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+footer section p {
+    color: #FFF;
+    font-family: PT Sans Narrow;
+}
+
+footer section .footer-logo {
+    width: 100px;
+    height: 100px;
+}
+
+footer section ul {
+    margin: 10px 0 0 20px;
+}
+
+footer section ul li {
+    list-style-type: square;
+    margin: 0 0 4px 0;
+    color: #fff;
+}
+
+footer section ul li a {
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: .8125em;
+}
+
+footer section iframe {
+    
+}
+
+/*-------------------------- Forms ----------------------------------------*/
+
+
+.fade, #fadeContainer {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #000000db;
+}
+
+#fadeContainer {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    background-color: #000000db;
+}
+
+#imageContainer {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    z-index: 7;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #696969;
+}
+
+#selectedArea {
+    background-color: #000000ad;
+}
+
+.setImage {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.closeImageContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #FFF;
+    z-index: 1;
+    border-radius: 50%;
+    padding: 1px 3px 1px 4px;
+}
+
+.dz-default {
+    width: 100%;
+    color: #795548;
+    border-radius: 6px;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 200;
+    border: 2px dashed #9E9E9E;
+}
+
+/*loading*/
+.spinner-border {
+    margin: 0 auto 10px;
+    display: none;
+}
+
+.optimization {
+    display: flex;
+    justify-content: space-between;
+}
+
+.optimization .spinner-border {
+    margin: 0;
+}
+
+/*Main page*/
+
+.statistic {
+    margin: 10px 0 0 0;
+}
+
+.user_info .hello {
+    display: flex;
+    margin: 0 0 30px 0;
+}
+
+.user_info .hello img {
+    height: 60px;
+    max-width: 100%;
+    border-radius: 50%;
+    margin: 0 30px 0 0;
+}
+
+.user_info .hello p {
+    font-family: Roboto;
+    color: #3a84df;
+    font-size: 1.5em;
+}
+
+.user_info .hello span {
+    color: #5b5b5b;
+}
+
+.user_info .hello small {
+    display: block;
+    margin: 5px 0 0 0;
+    font-family: Roboto;
+    color: #5b5b5b;
+    font-size: .875em;
+}
+
+.user_info .customer {
+    margin: 10px 0 0 0;
+}
+
+.sitemap {
+    margin: 20px 0 0 0;
+}
+
+.user_info .customer .container,
+.statistic .container,
+.sitemap .container  {
+    margin: 0 0 30px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EEE;
+}
+
+.statistic .container,
+.sitemap .container  {
+    margin: 10px 0 30px 0;
+}
+
+.sitemap .container .row .col,
+.user_info .customer .container .row .col,
+.statistic .container .row .col {
+    border-right: 1px solid #EEE;
+}
+
+.sitemap .container .row .col:last-child,
+.user_info .customer .container .row .col:last-child,
+.statistic .container .row .col:last-child {
+    border-right: none;
+}
+
+.user_info .customer h5 {
+    margin: 0 0 10px 0;
+}
+
+.user_info .customer label {
+    color: #9E9E9E;
+    font-family: Roboto;
+    font-size: .75em;
+}
+
+.user_info .customer p {
+    font-size: .875em;
+    margin-bottom: 10px;
+}
+
+.user_info .customer p.h1 {
+    font-size: 2.5em;
+}
+
+.user_info .customer .user-order {
+    display: flex;
+    margin: 0 0 10px 0;
+    background-color: #f5f5f5;
+    padding: 10px 6px;
+    align-items: center;
+}
+
+.user_info .customer .user-order span {
+    margin: 0 40px 0 0;
+    font-weight: 300;
+}
+
+.show-order {
+    margin: 10px 0 0 0;
+}
+
+.show-order .customer label {
+    color: #9E9E9E;
+}
+
+.show-order .customer p {
+    font-family: PT Sans Narrow;
+    font-size: 1.25em;
+    margin: 0 0 10px 0;
+}
+
+.show-order .borders {
+    border-left: 1px solid #EEE;
+    border-right: 1px solid #EEE;
+}
+
+.show-order .list {
+    display: flex;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    font-family: PT Sans Narrow;
+    position: relative;
+}
+
+.show-order .list .img {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    border-radius: 10px;
+}
+
+.show-order .list .info {
+    margin: 0 0 0 5%;
+    width: 75%;
+    font-size: .75em;
+}
+
+.show-order .list .info .amount {
+    margin: 7px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.show-order .list .set-ratio {
+    color: #4caf50;
+    font-size: .75em;
+}
+
+.time {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: flex-start;
+}
+
+.sorted {
+    border: 1px solid #28a745;
+}
