@@ -1,5 +1,5 @@
 <?php
-namespace frontend\controllers;
+namespace frontend\controllers; //namespaces
 
 use Yii;
 use yii\base\InvalidArgumentException;
