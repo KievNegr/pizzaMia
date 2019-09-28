@@ -1,6 +1,6 @@
 <?php
 /**
- * Application requirement checker script.
+ * Application requirement checker script. Branch develop
  *
  * In order to run this script use the following console command:
  * php requirements.php
