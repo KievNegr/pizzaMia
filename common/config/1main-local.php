@@ -5,7 +5,7 @@ return [
             'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=pizza',
             'username' => 'pizza',
-            'password' => 'kjfij38udf',
+            'password' => 'dadsd',
             'charset' => 'utf8',
         ],
         'mailer' => [
